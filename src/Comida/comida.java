@@ -57,6 +57,7 @@ public class comida extends JFrame implements ActionListener{
 			public void run() {
 				try {
 					comida frame = new comida();
+					 frame.setUndecorated(true);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -69,6 +70,7 @@ public class comida extends JFrame implements ActionListener{
 	 * Create the frame.
 	 */
 	public comida() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 632, 485);
 		contentPane = new JPanel();

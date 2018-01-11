@@ -53,6 +53,7 @@ public class bebidas extends JFrame {
 			public void run() {
 				try {
 					bebidas frame = new bebidas();
+					frame.setUndecorated(true);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -66,7 +67,7 @@ public class bebidas extends JFrame {
 	 */
 	public bebidas() {
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-		setBounds(100, 100, 750, 485);
+		setBounds(100, 100, 750, 474);
 		contentPane = new JPanel();
 		contentPane.setBackground(SystemColor.menu);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -219,7 +220,7 @@ public class bebidas extends JFrame {
 		lblNewLabel_1.setFont(new Font("Arial Black", Font.BOLD, 13));
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_1.setIcon(new ImageIcon(bebidas.class.getResource("/ima1/pape.jpg")));
-		lblNewLabel_1.setBounds(0, 0, 734, 446);
+		lblNewLabel_1.setBounds(0, 0, 755, 459);
 		contentPane.add(lblNewLabel_1);
 		
 		

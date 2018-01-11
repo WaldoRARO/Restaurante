@@ -55,6 +55,7 @@ public class frmLogin extends JFrame {
 			public void run() {
 				try {
 					frmLogin frame = new frmLogin();
+					 frame.setUndecorated(true);
 					frame.setVisible(true);
 					frame.setLocationRelativeTo(null);
 				    
@@ -206,7 +207,7 @@ public class frmLogin extends JFrame {
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
 		lblNewLabel_2.setIcon(new ImageIcon("src/ima1/Login.jpg"));
-		lblNewLabel_2.setBounds(0, 0, 437, 197);
+		lblNewLabel_2.setBounds(0, 0, 450, 232);
 		contentPane.add(lblNewLabel_2);
 	}
 

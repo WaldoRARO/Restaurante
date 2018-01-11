@@ -45,6 +45,7 @@ public class Postres extends JFrame {
 			public void run() {
 				try {
 					Postres frame = new Postres();
+					 frame.setUndecorated(true);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -57,6 +58,7 @@ public class Postres extends JFrame {
 	 * Create the frame.
 	 */
 	public Postres() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 498, 350);
 		contentPane = new JPanel();

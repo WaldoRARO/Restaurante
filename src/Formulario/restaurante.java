@@ -41,6 +41,7 @@ public class restaurante extends JFrame  {
 			public void run() {
 				try {
 					restaurante frame = new restaurante();
+					 frame.setUndecorated(true);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -54,7 +55,7 @@ public class restaurante extends JFrame  {
 	 */
 	public restaurante() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(200, 200, 736, 550);
+		setBounds(100, 100, 888, 688);
 		contentPane = new JPanel();
 		//contentPane.setForeground(Color.RED);
 		contentPane.setBorder(null);
@@ -128,11 +129,8 @@ public class restaurante extends JFrame  {
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("src/ima1/res.jpg"));
-		lblNewLabel.setBounds(0, 0, 730, 496);
+		lblNewLabel.setBounds(0, 0, 891, 648);
 		panel.add(lblNewLabel);
-		//Container contentPane = getContentPane();
-		//this.getContentPane().setBackground(Color.BLACK.brighter());
-		setResizable(false);
 		this.setLocationRelativeTo(null);
 		
 		
