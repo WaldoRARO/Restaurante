@@ -166,8 +166,8 @@ public class frmLogin extends JFrame {
 					Class.forName("com.mysql.jdbc.Driver");
 					String url = "jdbc:mysql://localhost/bd_tutorial";
 					String usr = "root";
-					String psw = "RARO97";
-					//String psw = "";//
+					//String psw = "RARO97";
+					String psw = "";//
 					
 					con = DriverManager.getConnection(url, usr, psw);
 					

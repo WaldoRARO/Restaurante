@@ -72,7 +72,7 @@ public class comida extends JFrame implements ActionListener{
 	public comida() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-		setBounds(100, 100, 632, 485);
+		setBounds(100, 100, 895, 485);
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.GREEN);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -96,7 +96,7 @@ public class comida extends JFrame implements ActionListener{
 				}
 			}
 		});
-		enviar.setBounds(165, 392, 121, 43);
+		enviar.setBounds(371, 392, 121, 43);
 		contentPane.add(enviar);
 		
 		carne = new JComboBox<String>();
@@ -121,7 +121,7 @@ public class comida extends JFrame implements ActionListener{
 		mariscos.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		mariscos.setBackground(new Color(204, 0, 0));
 		mariscos.setForeground(new Color(0, 0, 0));
-		mariscos.setBounds(43, 148, 348, 29);
+		mariscos.setBounds(421, 75, 348, 29);
 		getContentPane().add(mariscos);
 		
 		JLabel lblNewLabel = new JLabel("CARNES");
@@ -136,19 +136,19 @@ public class comida extends JFrame implements ActionListener{
 		lblNewLabel_1.setForeground(new Color(204, 0, 0));
 		lblNewLabel_1.setFont(new Font("Arial Black", Font.BOLD, 14));
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setBounds(138, 115, 104, 29);
+		lblNewLabel_1.setBounds(535, 29, 104, 29);
 		contentPane.add(lblNewLabel_1);
 		
 		textField = new JTextField();
 		textField.setHorizontalAlignment(SwingConstants.CENTER);
 		textField.setBackground(new Color(153, 204, 204));
 		textField.setFont(new Font("Arial Black", Font.BOLD | Font.ITALIC, 13));
-		textField.setBounds(43, 352, 364, 29);
+		textField.setBounds(235, 352, 364, 29);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JButton btnNewButton = new JButton("ORDENAR");
-		btnNewButton.setBounds(469, 390, 111, 45);
+		btnNewButton.setBounds(768, 391, 111, 45);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("REGRESAR");
@@ -157,7 +157,7 @@ public class comida extends JFrame implements ActionListener{
 				comida.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(469, 11, 111, 37);
+		btnNewButton_1.setBounds(768, 11, 111, 37);
 		contentPane.add(btnNewButton_1);
 		
 		mariscos.addItem("");
